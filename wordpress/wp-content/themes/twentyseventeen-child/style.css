@@ -9,12 +9,71 @@ Version: 1.0.0
 Text Domain: twentyseventeen-child
 */ 
 
-
-.site-content-contain {
-    background-color: #d5ffa0;
+/*Typography and site style*/
+.site-content-contain{
     position: relative;
-}
-
-p {
     font-family: Lato, sans-serif;
 }
+
+/*The height of the header*/
+.custom-header-media{
+    height: 235px !important;
+}
+
+/*The height of the images on the background*/
+.panel-image{
+    height: 450px;
+}
+
+/*The position of the header image*/
+.has-header-image .custom-header-media img, .has-header-video .custom-header-media video, .has-header-video .custom-header-media iframe {
+    position: inherit;
+}
+
+/*To make the logo black*/
+.custom-logo-link{
+        filter: invert(1);
+}
+
+/*The background color of the navigation menu*/
+footer, .navigation-top{
+    background:#f1efef;
+}
+
+/*The font size of the heading 2*/
+h2{
+    font-size: 1.5em !important;
+}
+
+.menu-scroll-down, .site-info{
+    display: none !important;
+}
+
+/*To top button to the right*/
+#menu-item-81{
+    float: right;
+}
+
+/*When hovering over a heading 2 theres no underline*/
+h2 a, h2 a:hover{
+    text-decoration:none;
+}
+
+/*When hovering over a heading 2 theres no underline*/
+.entry-content a, .entry-content a:hover{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+/*When hovering over a portfolio title the title will be become red and shows that its a link*/
+.entry-content a:hover{
+    color:red;
+}
+
+/*responsive footer and social media signs*/
+@media screen and (min-width: 48em){
+.social-navigation{
+    position: relative;
+    left: 755px;
+    bottom: 175px;
+}}

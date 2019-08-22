@@ -1,4 +1,5 @@
 <?php
+//to make child theme work
 
 function mychildtheme_enqueue_styles() {
 
@@ -24,3 +25,4 @@ function mychildtheme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' );
 ?>
+
